@@ -1,0 +1,141 @@
+/********** Template CSS **********/
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 600 !important;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+.navbar{    
+            display: flex;
+            height: 7vh;
+            background-color:rgb(54, 52, 52);
+            padding-left: 1100px;
+            /* position:fixed; */
+}
+.navbar a{
+     color: white;
+}
+.navbar a :hover{
+    background-color: orangered;
+}
+/* .collapse{
+    position: sticky;
+} */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+img{
+    height: 50px;
+    width: 1500px;
+    /* height: 40.875rem; */
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* bannner */
+.banner{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./output.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner h1{
+    text-align:center;
+    color: white;
+    padding-top: 200px;
+}
+.banner p{
+    text-align: center;
+    color: grey;
+
+
+}
+.row h1{
+    text-align: center;
+}
+/* .right{
+    margin-left:500px;
+} */
+img{
+    align-items:end;
+}
+.right p{
+    text-align:start;
+    
+}
+
+.d-flex a{
+    width: 1700px;
+}
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+.footer-conten1{
+    background-color:lightgray;
+    height: 10vh;
+}
+.footer-conten2{
+    background-color: black;
+    height: 15vh;
+    justify-content: space-between;
+    /* display: inline-block; */
+    font-size: 20px;
+}
+.footer-conten1 i{
+        align-items: center;
+        margin-top: 25px ;
+        display: inline-block;
+        margin-right: 35px;        
+}
+.footer-conten2 i{
+    align-items: center;
+    margin-top: 42px ;
+}
+.fa-facebook-f {
+    color: blue;
+    /* background-color: #fff; */
+  }
+.fa-twitter{
+    color:dodgerblue;
+}
+.fa-instagram{
+    color:darkmagenta;
+}
+.fa-youtube{
+    color: red;
+}
+.fa {
+    font-size: 25px;
+    height: 30px; 
+}
+.fa-brands {
+    font-size: 30px;
+    height: 40px; 
+}
+
+
+.img-fluid{
+
+    border-radius: 10%;
+}

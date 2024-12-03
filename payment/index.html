@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form - Sagar Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Payment Form</h2>
+        <form action="payment.jsp" method="post">
+            <h4>Account</h4>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" name="fullName" placeholder="Full Name" class="name" required />
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="number" name="aadhar" placeholder="Aadhar Number" class="name" required />
+                    <i class="fa fa-solid fa-id-card icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="email" name="email" placeholder="Email Address" class="name" required />
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="number" name="mobile" placeholder="Mobile" class="name" required />
+                    <i class="fa fa-solid fa-phone icon" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" name="address" placeholder="Address" class="name" required />
+                    <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" name="city" placeholder="City" class="name" required />
+                    <i class="fa fa-institution icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <select name="roomType" class="option" style="height:40px;width:300px;" required>
+                        <option value='' selected>Select Room Types</option>
+                        <option value='standardroom'>Standard ROOMS</option>
+                        <option value='superiorroom'>Superior ROOMS</option>
+                        <option value='deluxeroom'>Deluxe ROOMS</option>
+                        <option value='luxuriousroom'>Luxurious ROOMS</option>
+                        <option value='superiorroomtwinbed'>Superior Room Twin Bed</option>
+                        <option value='executiveroomtwinbed'>Executive Room Twin Bed</option>
+                        <option value='executiveroomkingbed'>Executive Room King Bed with balcony</option>
+                        <option value='twobedroomfamilysuite'>Two Bedroom Family Suite</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <span>ARRIVAL DATE </span> <br />
+                    <input type="date" name="arrivalDate" class="name" required />
+                </div>
+                <div class="input_box">
+                    <span>DEPARTURE DATE </span> <br />
+                    <input type="date" name="departureDate" class="name" required />
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <span>ADULTS </span> <br />
+                        <input type="number" name="adults" class="name" required />
+                    </div>
+                    <div class="input_box">
+                        <span>CHILDREN </span> <br />
+                        <input type="number" name="children" class="name" required />
+                    </div>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <h4>Payment Details</h4>
+                    <input type="radio" name="paymentMethod" class="radio" id="bc1" value="creditCard" checked />
+                    <label for="bc1"><span> <i class="fa fa-cc-visa"></i>Credit Card</span></label>
+                    <input type="radio" name="paymentMethod" class="radio" id="bc2" value="paypal" />
+                    <label for="bc2"><span> <i class="fa fa-cc-paypal"></i>Paypal</span></label>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" name="cardHolderName" class="name" placeholder="Card holder Name" required />
+                    <i class="fa fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="cardNumber" class="name" placeholder="0000-0000-0000-0000" required />
+                    <i class="fa fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="cvc" class="name" placeholder=" CVC Number" required />
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="number" name="expMonth" placeholder="Exp Month" class="name" required />
+                    <i class="fa fa-calendar icon" aria-hidden="true"></i>
+                </div>
+                <div class="input_box">
+                    <input type="number" name="expYear" placeholder="Exp Year" class="name" required />
+                    <i class="fa fa-calendar-o icon" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                  <a href="/Recipt/popup.html">pay now</a>
+                    <button type="submit" class="btn btn-primary">PAY NOW</button>
+                  </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
